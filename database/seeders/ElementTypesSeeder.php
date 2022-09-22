@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Element;
 use App\Models\ElementType;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -41,6 +42,6 @@ class ElementTypesSeeder extends Seeder
                 'name' => 'Eksternal Link',
             ]
         ];
-        ElementType::insert($elements);
+        Element::insert($elements);
     }
 }
